@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="200.0" maxWidth="500.0" minHeight="200.0" minWidth="500.0" prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="converter.controller.Controller">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+                    </items>
+                </Menu>
+            </menus>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </MenuBar>
+    </top>
+    <left>
+        <Pane BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button fx:id="loadButton" mnemonicParsing="false" onAction="#chooseFile" prefHeight="20.0" prefWidth="100.0" text="Load file" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#chosePath" prefHeight="20.0" prefWidth="100.0" text="Saving path">
+                            <VBox.margin>
+                                <Insets left="10.0" top="15.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets top="30.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </Pane>
+    </left>
+    <center>
+        <Pane BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <children>
+                <VBox prefHeight="50.0" prefWidth="400.0">
+                    <children>
+                        <TextField fx:id="loadingPath">
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="savingPath">
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0" top="15.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                    <padding>
+                        <Insets top="30.0" />
+                    </padding>
+                </VBox>
+                <Label text="Please, choose the file which you want to convert!">
+                    <padding>
+                        <Insets left="40.0" top="5.0" />
+                    </padding>
+                </Label>
+            </children>
+        </Pane>
+    </center>
+    <bottom>
+        <Pane maxHeight="50.0" maxWidth="500.0" minHeight="50.0" minWidth="500.0" prefHeight="50.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="convertButton" layoutX="187.0" layoutY="-6.0" mnemonicParsing="false" onAction="#convertFile" prefHeight="40.0" prefWidth="100.0" text="Convert File" />
+            </children>
+        </Pane>
+    </bottom>
+</BorderPane>
