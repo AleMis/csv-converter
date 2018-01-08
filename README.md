@@ -15,9 +15,10 @@ this file, and save a .csv file (with processed data) to the selected folder.
 ### Running the app ###
 1. Download project from github
 2. Build project using command: 'mvn clean install'
-3. You can run the app using command in Intellij terminal: 
-    java -jar <relative path>mycsvconvetor.jar
-    e.g. java -jar out\artifacts\mycsvconverter_jar\mycsvconverter.jar
+3. You can run the app by:
+    * running the Main method in Intellij
+    * using command in Intellij terminal: java -jar <relative path>convetor.jar
+      e.g. java -jar out\artifacts\converter_jar\converter.jar
 
 
 ### Input .csv file ###
