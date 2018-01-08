@@ -17,8 +17,9 @@ this file, and save a .csv file (with processed data) to the selected folder.
 2. Build project using command: 'mvn clean install'
 3. You can run the app by:
     * running the Main method in Intellij
-    * using command in Intellij terminal: java -jar <relative path>convetor.jar
-      e.g. java -jar out\artifacts\converter_jar\converter.jar
+    * using command in Intellij terminal: e.g. java -jar out\artifacts\converter_jar\converter.jar
+
+You can also use only the converter.jar file as a normal desktop app to run this program. (converter.jar file is in out\* folder). 
 
 
 ### Input .csv file ###
