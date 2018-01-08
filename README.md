@@ -45,7 +45,7 @@ Product #3          | http://link.com   |UZ733-2   |USD 8654.56   |American date
    Feature          |    Type
 ------------------- | ------------------
 File-encoding       | ISO-8859-1
-Separator-character | pipe-symbol(|)
+Separator-character | pipe-symbol
 Quote-character     | single-quotes(\')
 Escape-character    | backslash(\\)
 
