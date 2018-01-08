@@ -1,7 +1,7 @@
 # CSV Converter #
 
 This csv converter provide opportunity to load a specified .csv file (UTF-8 encoding), next process data from 
-this file, and save a .csv file (with processed data) to the selected folder.
+this file, and save a .csv file (ISO-88591-1 encoding with processed data) to the selected folder.
 
 ### Build With ###
 * Java - main programming language
@@ -15,9 +15,9 @@ this file, and save a .csv file (with processed data) to the selected folder.
 ### Running the app ###
 1. Download project from github
 2. Build project using command: 'mvn clean install'
-3. You can run the app by:
-    * running the Main method in Intellij
-    * using command in Intellij terminal: e.g. java -jar out\artifacts\converter_jar\converter.jar
+3. You can run the app:
+    * by running the Main method in Intellij, or
+    * by using command in Intellij terminal: e.g. java -jar out\artifacts\converter_jar\converter.jar
 
 You can also use only the converter.jar file as a normal desktop app to run this program. (converter.jar file is in out\* folder). 
 
